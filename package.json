@@ -1,6 +1,6 @@
 {
   "name": "devlife-react-simple-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Nguyen Dinh Truong <nguyendinhtruong98@gmail.com>",
   "description": "UI Components with React & Typescript with TailwindCSS",
@@ -13,6 +13,10 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truongprohk2502/devlife-react-simple-ui"
   },
   "exports": {
     ".": {

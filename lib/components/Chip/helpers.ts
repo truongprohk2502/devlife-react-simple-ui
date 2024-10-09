@@ -153,9 +153,9 @@ export const textColorVariants = cva("leading-none", {
 export const labelVariants = cva("leading-none", {
   variants: {
     size: {
-      small: "text-xs mt-[2px]",
-      medium: "text-base mt-[3px]",
-      large: "text-lg mt-[4px]",
+      small: "text-xs",
+      medium: "text-base",
+      large: "text-lg",
     },
   },
   defaultVariants: {
