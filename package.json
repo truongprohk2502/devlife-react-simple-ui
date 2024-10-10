@@ -1,6 +1,6 @@
 {
   "name": "devlife-react-simple-ui",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "Nguyen Dinh Truong <nguyendinhtruong98@gmail.com>",
   "description": "UI Components with React & Typescript with TailwindCSS",
@@ -34,18 +34,25 @@
     "release": "sh ./scripts/release.sh"
   },
   "dependencies": {
+    "@radix-ui/react-portal": "^1.1.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "lodash": "^4.17.21",
     "lucide-react": "^0.451.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.3"
+    "tailwind-merge": "^2.5.3",
+    "tinycolor2": "^1.6.0",
+    "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
+    "@types/lodash": "^4.17.10",
     "@types/node": "^22.7.5",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
+    "@types/tinycolor2": "^1.4.6",
     "@vitejs/plugin-react": "^4.3.2",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "autoprefixer": "^10.4.20",
