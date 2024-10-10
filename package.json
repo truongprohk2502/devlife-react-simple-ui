@@ -2,7 +2,10 @@
   "name": "devlife-react-simple-ui",
   "version": "1.0.5",
   "license": "MIT",
-  "author": "Nguyen Dinh Truong <nguyendinhtruong98@gmail.com>",
+  "author": {
+    "name": "Nguyen Dinh Truong",
+    "email": "nguyendinhtruong98@gmail.com"
+  },
   "description": "UI Components with React & Typescript with TailwindCSS",
   "type": "module",
   "main": "./dist/index.umd.js",
@@ -16,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/truongprohk2502/devlife-react-simple-ui"
+    "url": "git+https://github.com/truongprohk2502/devlife-react-simple-ui.git"
   },
   "exports": {
     ".": {
@@ -33,7 +36,8 @@
     "preview": "vite preview",
     "release": "sh ./scripts/release.sh",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_d278c6b18d763d8"
   },
   "dependencies": {
     "@radix-ui/react-portal": "^1.1.2",
@@ -68,6 +72,7 @@
     "@vitejs/plugin-react": "^4.3.2",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "autoprefixer": "^10.4.20",
+    "chromatic": "^11.12.5",
     "eslint": "^9.11.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
@@ -88,5 +93,9 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/truongprohk2502/devlife-react-simple-ui/issues"
+  },
+  "homepage": "https://github.com/truongprohk2502/devlife-react-simple-ui#readme"
 }

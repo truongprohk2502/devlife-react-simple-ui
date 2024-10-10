@@ -1,21 +1,54 @@
 import { StoryObj, Meta } from "@storybook/react";
-import Autocomplete from "../lib/components/Autocomplete";
+import DlAutocomplete from "../lib/components/Autocomplete";
 import React from "react";
 
-const meta: Meta<typeof Autocomplete> = {
+const meta: Meta<typeof DlAutocomplete> = {
   title: "DevLife UI/Autocomplete",
-  component: Autocomplete,
+  component: DlAutocomplete,
+  decorators: [
+    (Story) => <div style={{ paddingBottom: "12rem" }}>{Story()}</div>,
+  ],
+  argTypes: {
+    options: {
+      control: "object",
+      description: "List of recommended options",
+    },
+    value: {
+      control: "text",
+      description: "Input value",
+    },
+    placeholder: {
+      control: "text",
+      description: "Input placeholder",
+    },
+    className: {
+      control: "text",
+      description: "Wrapper class name",
+    },
+    disabled: {
+      control: "boolean",
+      description: "Disable autocomplete",
+      table: { defaultValue: { summary: "false" } },
+    },
+    onChange: {
+      control: "object",
+      description: "Change input event",
+    },
+  },
+  args: {
+    disabled: false,
+  },
   tags: ["autodocs"],
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Autocomplete>;
+type Story = StoryObj<typeof DlAutocomplete>;
 
-const AutocompleteWithHooks = (props: any) => {
+const Autocomplete = (props: any) => {
   const [value, setValue] = React.useState<string>("");
 
-  return <Autocomplete {...props} value={value} onChange={setValue} />;
+  return <DlAutocomplete {...props} value={value} onChange={setValue} />;
 };
 
 export const Basic: Story = {
@@ -34,5 +67,5 @@ export const Basic: Story = {
       "Lion",
     ],
   },
-  render: (args) => <AutocompleteWithHooks {...args} />,
+  render: (args) => <Autocomplete {...args} />,
 };

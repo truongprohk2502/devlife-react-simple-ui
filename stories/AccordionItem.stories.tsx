@@ -6,7 +6,13 @@ import React from "react";
 const meta: Meta<typeof AccordionItem> = {
   title: "DevLife UI/AccordionItem",
   component: AccordionItem,
-  decorators: [(Story) => <Accordion variant="splitted">{Story()}</Accordion>],
+  decorators: [
+    (Story) => (
+      <div style={{ minHeight: "8rem" }}>
+        <Accordion variant="splitted">{Story()}</Accordion>
+      </div>
+    ),
+  ],
   argTypes: {
     id: {
       control: "text",

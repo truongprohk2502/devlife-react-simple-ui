@@ -5,11 +5,14 @@ import AccordionItem from "../lib/components/Accordion/AccordionItem";
 const meta: Meta<typeof Accordion> = {
   title: "DevLife UI/Accordion",
   component: Accordion,
+  decorators: [
+    (Story) => <div style={{ paddingBottom: "8rem" }}>{Story()}</div>,
+  ],
   argTypes: {
     variant: {
       control: "radio",
       options: ["light", "bordered", "splitted"],
-      description: "Theme variant of accordion",
+      description: "Theme variant of `Accordion`",
       table: { defaultValue: { summary: '"light"' } },
     },
     selectMode: {
