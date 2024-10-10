@@ -56,7 +56,7 @@ const Autocomplete: React.FC<Props> = ({
       if (index === filteredOptions.length - 1) {
         scrollRef.current!.scrollTo(
           0,
-          scrollRef.current!.scrollHeight - optionHeight,
+          scrollRef.current!.scrollHeight - optionHeight
         );
       } else {
         const optionToTop = index * OPTION_HEIGHT;
@@ -105,7 +105,7 @@ const Autocomplete: React.FC<Props> = ({
     const { bottom } = dropdownRef.current!.getBoundingClientRect();
     const distanceToBottom = window.innerHeight - bottom;
     setPosition(
-      distanceToBottom > 230 ? PositionType.Bottom : PositionType.Top,
+      distanceToBottom > 230 ? PositionType.Bottom : PositionType.Top
     );
     setOpening(true);
   };
@@ -142,12 +142,12 @@ const Autocomplete: React.FC<Props> = ({
             "border-neutral-400 text-neutral-600 hover:border-cyan-500":
               !disabled,
           },
-          { "border-cyan-500": opening },
+          { "border-cyan-500": opening }
         )}
       >
         <input
           type="text"
-          className="w-full focus:outline-none text-sm"
+          className="w-full focus:outline-none text-sm disabled:bg-transparent"
           disabled={disabled}
           placeholder={placeholder}
           value={value}
@@ -164,7 +164,7 @@ const Autocomplete: React.FC<Props> = ({
             "bottom-[calc(100%+0.5rem)]": position === PositionType.Top,
             "top-[calc(100%+0.5rem)]": position === PositionType.Bottom,
           },
-          { hidden: !opening || filteredOptions.length === 0 },
+          { hidden: !opening || filteredOptions.length === 0 }
         )}
       >
         {filteredOptions.map((item) => (
@@ -173,7 +173,7 @@ const Autocomplete: React.FC<Props> = ({
             style={{ height: OPTION_HEIGHT }}
             className={cn(
               "px-3 flex items-center text-sm font-medium cursor-pointer overflow-hidden whitespace-nowrap text-ellipsis",
-              { "bg-neutral-300": selectedOption === item },
+              { "bg-neutral-300": selectedOption === item }
             )}
             onClick={() => handleSelect(item)}
             onMouseEnter={() => handleHover(item)}

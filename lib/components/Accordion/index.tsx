@@ -50,7 +50,7 @@ const Accordion: React.FC<Props> = ({
               variant === "bordered",
             "grid grid-cols-1 gap-2": variant === "splitted",
           },
-          className,
+          className
         )}
       >
         {children}
