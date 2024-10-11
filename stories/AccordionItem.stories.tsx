@@ -23,7 +23,13 @@ const meta: Meta<typeof AccordionItem> = {
       description: "Title of `AccordionItem`",
     },
     children: {
+      control: "object",
       description: "Body content of `AccordionItem`",
+      table: {
+        type: {
+          summary: "ReactNode",
+        },
+      },
     },
   },
   tags: ["autodocs"],

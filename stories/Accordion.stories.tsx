@@ -27,7 +27,13 @@ const meta: Meta<typeof Accordion> = {
       description: "Wrapper class name",
     },
     children: {
+      control: "object",
       description: "Contains child `AccordionItem` components",
+      table: {
+        type: {
+          summary: "ReactNode",
+        },
+      },
     },
   },
   args: {

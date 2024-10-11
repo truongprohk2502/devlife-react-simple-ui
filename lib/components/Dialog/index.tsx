@@ -23,7 +23,7 @@ const Dialog: React.FC<Props> = ({
   overlayCancel,
   hasFooterCancel,
   hasFooterConfirm,
-  confirmTitle,
+  confirmTitle = "Confirm",
   children,
   onConfirm,
   onClose,
@@ -93,7 +93,7 @@ const Dialog: React.FC<Props> = ({
                   className="focus:outline-none border-none bg-neutral-800 text-white rounded-sm px-4 py-2 text-sm"
                   onClick={onConfirm}
                 >
-                  {confirmTitle || "Confirm"}
+                  {confirmTitle}
                 </button>
               )}
             </div>

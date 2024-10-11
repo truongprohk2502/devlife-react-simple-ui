@@ -10,6 +10,7 @@ const preview: Preview = {
       },
       expanded: true,
     },
+    actions: { argTypesRegex: "^on.*" },
   },
 };
 

@@ -45,11 +45,16 @@ const Dropdown: React.FC<Props> = ({
     setOpening(true);
   };
 
+  const selectedOption = options.find((item) => item.value === value);
+
   return (
-    <div ref={dropdownRef} className={cn("w-[12rem] relative", className)}>
+    <div
+      ref={dropdownRef}
+      className={cn("w-[12rem] h-[2.375rem] relative", className)}
+    >
       <div
         className={cn(
-          "rounded-md border flex items-center px-4 py-2",
+          "rounded-md border flex items-center px-4 h-full",
           {
             "border-neutral-300 text-neutral-300 cursor-not-allowed": disabled,
             "border-neutral-400 text-neutral-600 hover:border-cyan-500 cursor-pointer":
@@ -59,8 +64,13 @@ const Dropdown: React.FC<Props> = ({
         )}
         onClick={() => !disabled && handleOpen()}
       >
-        <p className="text-sm font-medium pr-2 flex-1 w-full overflow-hidden whitespace-nowrap text-ellipsis">
-          {options.find((item) => item.value === value)?.label || placeholder}
+        <p
+          className={cn(
+            "text-sm pr-2 flex-1 w-full overflow-hidden whitespace-nowrap text-ellipsis",
+            selectedOption ? "text-neutral-700 font-medium" : "text-neutral-400"
+          )}
+        >
+          {selectedOption?.label || placeholder}
         </p>
         <ChevronDownIcon className="w-4 h-4" />
       </div>

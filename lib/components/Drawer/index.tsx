@@ -77,10 +77,12 @@ const Drawer: React.FC<Props> = ({
               <h3 className="text-ellipsis line-clamp-1 font-semibold">
                 {title}
               </h3>
-              <XIcon
-                className="w-6 h-6 text-neutral-700 cursor-pointer"
-                onClick={onClose}
-              />
+              {!disabledHeaderClose && (
+                <XIcon
+                  className="w-6 h-6 text-neutral-700 cursor-pointer"
+                  onClick={onClose}
+                />
+              )}
             </div>
           )}
           <div className="overflow-auto flex-1">{children}</div>
@@ -88,7 +90,7 @@ const Drawer: React.FC<Props> = ({
             <div className="px-4 py-3 flex gap-3 justify-end sticky bottom-0 bg-white border-t border-neutral-200">
               {hasFooterCancel && (
                 <button
-                  className="focus:outline-none border-none bg-neutral-200 text-neutral-600 rounded-sm px-4 py-2 text-sm"
+                  className="focus:outline-none border-none bg-neutral-200 text-neutral-600 rounded-md px-4 py-2 text-sm"
                   onClick={onClose}
                 >
                   Cancel
@@ -96,7 +98,7 @@ const Drawer: React.FC<Props> = ({
               )}
               {hasFooterConfirm && (
                 <button
-                  className="focus:outline-none border-none bg-neutral-800 text-white rounded-sm px-4 py-2 text-sm"
+                  className="focus:outline-none border-none bg-neutral-800 text-white rounded-md px-4 py-2 text-sm"
                   onClick={onConfirm}
                 >
                   {confirmTitle || "Confirm"}

@@ -8,7 +8,9 @@ export const checkIsSameMonth = (month: string, day: string) =>
   +month.slice(-2) === +day.split("-")[1];
 
 export const getMonth = (date: string | null | undefined) => {
-  const dateInstance = date ? dayjs(date) : dayjs();
+  const formattedDate = date?.replace("MM", "01").replace("DD", "01");
+
+  const dateInstance = formattedDate ? dayjs(formattedDate) : dayjs();
   return dateInstance.format(MONTH_FORMAT);
 };
 

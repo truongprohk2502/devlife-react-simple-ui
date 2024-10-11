@@ -137,5 +137,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-animation-delay"),
+  ],
 };
