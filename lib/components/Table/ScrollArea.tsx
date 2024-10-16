@@ -154,7 +154,9 @@ const ScrollArea: React.FC<Props> = ({ className, children }) => {
 
     const handleMouseEnter = () => {
       isHovering.current = true;
-      scrollbarRef.current!.style.visibility = "visible";
+      const element = contentRef.current!;
+      if (element.scrollHeight > element.offsetHeight)
+        scrollbarRef.current!.style.visibility = "visible";
     };
 
     const handleMouseLeave = () => {
