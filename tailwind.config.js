@@ -140,5 +140,6 @@ export default {
   plugins: [
     require("tailwindcss-animate"),
     require("tailwindcss-animation-delay"),
+    require('tailwind-scrollbar-hide')
   ],
 };
