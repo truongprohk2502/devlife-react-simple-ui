@@ -6,7 +6,7 @@ It's using TailwindCSS for styling.
 You can also view the demo and get the source code directly for each component without installing this library.
 
 - [Preview and get the code](https://dev-life-solution.netlify.app/ui-components)
-- [Access Storybook here](https://6707ec4353dd2e5b89ffccf0-rhygnzeyip.chromatic.com/)
+- [Access Storybook here](https://6707ec4353dd2e5b89ffccf0-lboujpgtrl.chromatic.com/)
 
 ## Installation
 
