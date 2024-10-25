@@ -20,6 +20,7 @@ import MobileMockup from "./components/MobileMockup";
 import Pagination from "./components/Pagination";
 import Progress from "./components/Progress";
 import Radio from "./components/Radio";
+import Rating from "./components/Rating";
 import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
 import Spinner from "./components/Spinner";
@@ -53,6 +54,7 @@ export {
   Pagination,
   Progress,
   Radio,
+  Rating,
   Skeleton,
   Slider,
   Spinner,
