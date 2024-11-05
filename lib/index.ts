@@ -4,6 +4,7 @@ import AccordionItem from "./components/Accordion/AccordionItem";
 import Autocomplete from "./components/Autocomplete";
 import Avatar from "./components/Avatar";
 import Badge from "./components/Badge";
+import BlockUI from "./components/BlockUI";
 import Breadcrumb from "./components/Breadcrumb";
 import BrowserMockup from "./components/BrowserMockup";
 import Button from "./components/Button";
@@ -21,6 +22,7 @@ import Pagination from "./components/Pagination";
 import Progress from "./components/Progress";
 import Radio from "./components/Radio";
 import Rating from "./components/Rating";
+import Ripple from "./components/Ripple";
 import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
 import Spinner from "./components/Spinner";
@@ -38,6 +40,7 @@ export {
   Autocomplete,
   Avatar,
   Badge,
+  BlockUI,
   Breadcrumb,
   BrowserMockup,
   Button,
@@ -55,6 +58,7 @@ export {
   Progress,
   Radio,
   Rating,
+  Ripple,
   Skeleton,
   Slider,
   Spinner,
