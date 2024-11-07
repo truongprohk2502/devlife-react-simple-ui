@@ -7,7 +7,12 @@ interface Props {
   className?: string;
 }
 
-const BlockUI: React.FC<Props> = ({ icon, blocked = true, children, className }) => {
+const BlockUI: React.FC<Props> = ({
+  icon,
+  blocked = true,
+  children,
+  className,
+}) => {
   return (
     <div className={cn("relative", className)}>
       {children}

@@ -51,7 +51,7 @@ const Ripple: React.FC<Props> = ({
   const refCallback = useCallback(
     (el: HTMLDivElement | null) => {
       if (!el) return;
-      
+
       el.addEventListener("click", handleClick);
       return () => {
         el.removeEventListener("click", handleClick);

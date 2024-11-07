@@ -38,10 +38,10 @@ const meta: Meta<typeof BlockUI> = {
     className: {
       control: "text",
       description: "Wrapper class name",
-    }
+    },
   },
   args: {
-    blocked: true
+    blocked: true,
   },
   tags: ["autodocs"],
 };
@@ -63,6 +63,6 @@ export const Basic: Story = {
         mollit anim id est laborum.
       </p>
     ),
-    icon: <LockIcon />
+    icon: <LockIcon />,
   },
 };

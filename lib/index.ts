@@ -8,6 +8,7 @@ import BlockUI from "./components/BlockUI";
 import Breadcrumb from "./components/Breadcrumb";
 import BrowserMockup from "./components/BrowserMockup";
 import Button from "./components/Button";
+import Carousel from "./components/Carousel";
 import Checkbox from "./components/Checkbox";
 import Chip from "./components/Chip";
 import Code from "./components/Code";
@@ -44,6 +45,7 @@ export {
   Breadcrumb,
   BrowserMockup,
   Button,
+  Carousel,
   Checkbox,
   Chip,
   Code,
