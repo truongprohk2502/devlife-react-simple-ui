@@ -26,6 +26,7 @@ import Rating from "./components/Rating";
 import Ripple from "./components/Ripple";
 import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
+import SpeedDial from "./components/SpeedDial";
 import Spinner from "./components/Spinner";
 import Switch from "./components/Switch";
 import Table from "./components/Table";
@@ -63,6 +64,7 @@ export {
   Ripple,
   Skeleton,
   Slider,
+  SpeedDial,
   Spinner,
   Switch,
   Table,

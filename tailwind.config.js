@@ -118,6 +118,14 @@ export default {
             strokeDashoffset: "-125px",
           },
         },
+        "scale-in": {
+          from: { transform: "scale(0)" },
+          to: { transform: "scale(1)" },
+        },
+        "scale-out": {
+          from: { transform: "scale(1)" },
+          to: { transform: "scale(0)" },
+        },
       },
       animation: {
         "zoom-in": "zoom-in 0.2s ease-out",
@@ -134,6 +142,8 @@ export default {
         "toast-in": "toast-in 0.15s ease-in-out",
         "toast-out": "toast-out 0.15s ease-in-out",
         skeleton: "skeleton 2s infinite",
+        "scale-in": "scale-in",
+        "scale-out": "scale-out",
       },
     },
   },

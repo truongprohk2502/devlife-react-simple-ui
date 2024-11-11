@@ -24,6 +24,19 @@ const meta: Meta<typeof DlCarousel> = {
         },
       },
     },
+    showIndicator: {
+      control: "boolean",
+      description: "Whether to show the indicator",
+    },
+    autoplay: {
+      control: "number",
+      description: "Autoplay interval in milliseconds. Needs `infiniteLoop` to be true",
+      table: {
+        type: {
+          summary: "number | undefined",
+        },
+      },
+    },
     children: {
       control: "object",
       description: "Content of `Carousel`",
@@ -35,7 +48,9 @@ const meta: Meta<typeof DlCarousel> = {
     },
   },
   args: {
-    infiniteLoop: false,
+    infiniteLoop: true,
+    showIndicator: true,
+    autoplay: 3000,
     show: 1,
   },
   tags: ["autodocs"],
