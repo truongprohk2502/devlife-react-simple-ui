@@ -12,6 +12,7 @@ import Carousel from "./components/Carousel";
 import Checkbox from "./components/Checkbox";
 import Chip from "./components/Chip";
 import Code from "./components/Code";
+import Countdown from "./components/Countdown";
 import DatePicker from "./components/DatePicker";
 import Dialog from "./components/Dialog";
 import Drawer from "./components/Drawer";
@@ -36,6 +37,7 @@ import Textarea from "./components/Textarea";
 import Toast from "./components/Toast";
 import { useToast } from "./components/Toast/useToast";
 import Tooltip from "./components/Tooltip";
+import Watermark from "./components/Watermark";
 
 export {
   Accordion,
@@ -51,6 +53,7 @@ export {
   Checkbox,
   Chip,
   Code,
+  Countdown,
   DatePicker,
   Dialog,
   Drawer,
@@ -75,4 +78,5 @@ export {
   Toast,
   Tooltip,
   useToast,
+  Watermark,
 };
