@@ -28,6 +28,7 @@ import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
 import SpeedDial from "./components/SpeedDial";
 import Spinner from "./components/Spinner";
+import Steps from "./components/Steps";
 import Switch from "./components/Switch";
 import Table from "./components/Table";
 import Tabs from "./components/Tabs";
@@ -66,6 +67,7 @@ export {
   Slider,
   SpeedDial,
   Spinner,
+  Steps,
   Switch,
   Table,
   Tabs,
