@@ -20,6 +20,7 @@ import Dropdown from "./components/Dropdown";
 import ImageDiff from "./components/ImageDiff";
 import Input from "./components/Input";
 import MobileMockup from "./components/MobileMockup";
+import OtpInput from "./components/OtpInput";
 import Pagination from "./components/Pagination";
 import Progress from "./components/Progress";
 import Radio from "./components/Radio";
@@ -61,6 +62,7 @@ export {
   ImageDiff,
   Input,
   MobileMockup,
+  OtpInput,
   Pagination,
   Progress,
   Radio,
