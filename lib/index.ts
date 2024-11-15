@@ -12,6 +12,7 @@ import Carousel from "./components/Carousel";
 import Checkbox from "./components/Checkbox";
 import Chip from "./components/Chip";
 import Code from "./components/Code";
+import ContextMenu from "./components/ContextMenu";
 import Countdown from "./components/Countdown";
 import DatePicker from "./components/DatePicker";
 import Dialog from "./components/Dialog";
@@ -54,6 +55,7 @@ export {
   Checkbox,
   Chip,
   Code,
+  ContextMenu,
   Countdown,
   DatePicker,
   Dialog,
