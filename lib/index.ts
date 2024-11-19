@@ -32,6 +32,7 @@ import Slider from "./components/Slider";
 import SpeedDial from "./components/SpeedDial";
 import Spinner from "./components/Spinner";
 import Steps from "./components/Steps";
+import SwapButton from "./components/SwapButton";
 import Switch from "./components/Switch";
 import Table from "./components/Table";
 import Tabs from "./components/Tabs";
@@ -75,6 +76,7 @@ export {
   SpeedDial,
   Spinner,
   Steps,
+  SwapButton,
   Switch,
   Table,
   Tabs,
