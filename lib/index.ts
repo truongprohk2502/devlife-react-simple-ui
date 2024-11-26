@@ -2,6 +2,7 @@ import "./index.css";
 import Accordion from "./components/Accordion";
 import AccordionItem from "./components/Accordion/AccordionItem";
 import Autocomplete from "./components/Autocomplete";
+import AngleSlider from "./components/AngleSlider";
 import Avatar from "./components/Avatar";
 import Badge from "./components/Badge";
 import BlockUI from "./components/BlockUI";
@@ -45,6 +46,7 @@ import Watermark from "./components/Watermark";
 export {
   Accordion,
   AccordionItem,
+  AngleSlider,
   Autocomplete,
   Avatar,
   Badge,
