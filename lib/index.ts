@@ -28,6 +28,7 @@ import Progress from "./components/Progress";
 import Radio from "./components/Radio";
 import Rating from "./components/Rating";
 import Ripple from "./components/Ripple";
+import ScrollTop from "./components/ScrollTop";
 import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
 import SpeedDial from "./components/SpeedDial";
@@ -73,6 +74,7 @@ export {
   Radio,
   Rating,
   Ripple,
+  ScrollTop,
   Skeleton,
   Slider,
   SpeedDial,
