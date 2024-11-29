@@ -42,6 +42,7 @@ import Textarea from "./components/Textarea";
 import Toast from "./components/Toast";
 import { useToast } from "./components/Toast/useToast";
 import Tooltip from "./components/Tooltip";
+import TreeView from "./components/TreeView";
 import Watermark from "./components/Watermark";
 
 export {
@@ -87,6 +88,7 @@ export {
   Textarea,
   Toast,
   Tooltip,
+  TreeView,
   useToast,
   Watermark,
 };
