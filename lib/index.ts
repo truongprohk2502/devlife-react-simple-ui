@@ -38,6 +38,8 @@ import SwapButton from "./components/SwapButton";
 import Switch from "./components/Switch";
 import Table from "./components/Table";
 import Tabs from "./components/Tabs";
+import Terminal from "./components/Terminal";
+import type { CommandLine } from "./components/Terminal/types";
 import Textarea from "./components/Textarea";
 import Toast from "./components/Toast";
 import { useToast } from "./components/Toast/useToast";
@@ -85,6 +87,8 @@ export {
   Switch,
   Table,
   Tabs,
+  Terminal,
+  CommandLine,
   Textarea,
   Toast,
   Tooltip,
