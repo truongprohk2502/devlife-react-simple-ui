@@ -31,6 +31,7 @@ import Ripple from "./components/Ripple";
 import ScrollTop from "./components/ScrollTop";
 import Skeleton from "./components/Skeleton";
 import Slider from "./components/Slider";
+import SortableList from "./components/SortableList";
 import SpeedDial from "./components/SpeedDial";
 import Spinner from "./components/Spinner";
 import Steps from "./components/Steps";
@@ -80,6 +81,7 @@ export {
   ScrollTop,
   Skeleton,
   Slider,
+  SortableList,
   SpeedDial,
   Spinner,
   Steps,

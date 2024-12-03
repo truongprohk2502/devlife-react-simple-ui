@@ -65,7 +65,7 @@ const Tabs: React.FC<Props> = ({
   }, [variant, size, radius]);
 
   const handleChange = (tab: Tab, index: number) => {
-    if (tab.disabled) return;
+    if (disabled || tab.disabled) return;
     setTabPosition(index);
     onChange(index);
   };
