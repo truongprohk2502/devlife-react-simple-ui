@@ -19,6 +19,7 @@ import DatePicker from "./components/DatePicker";
 import Dialog from "./components/Dialog";
 import Drawer from "./components/Drawer";
 import Dropdown from "./components/Dropdown";
+import Galleria from "./components/Galleria";
 import ImageDiff from "./components/ImageDiff";
 import Input from "./components/Input";
 import MobileMockup from "./components/MobileMockup";
@@ -69,6 +70,7 @@ export {
   Dialog,
   Drawer,
   Dropdown,
+  Galleria,
   ImageDiff,
   Input,
   MobileMockup,

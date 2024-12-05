@@ -126,6 +126,10 @@ export default {
           from: { transform: "scale(1)" },
           to: { transform: "scale(0)" },
         },
+        "splash": {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
       },
       animation: {
         "zoom-in": "zoom-in 0.2s ease-out",
@@ -144,6 +148,7 @@ export default {
         skeleton: "skeleton 2s infinite",
         "scale-in": "scale-in",
         "scale-out": "scale-out",
+        "splash": "splash 0.15s ease-in-out",
       },
     },
   },
